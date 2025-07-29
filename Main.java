@@ -17,11 +17,9 @@ public class Main {
 
         String data1Str = "30-08-2025 10:00";
         String data2Str = "30-08-2025 10:00"; 
-        String data3Str = "01-08-2025 14:00";
 
         tentarAgendarConsulta(dono1, animal1, data1Str, Agenda.Servico.VACINACAO, agendamentos, formatter);
         tentarAgendarConsulta(dono2, animal2, data2Str, Agenda.Servico.BANHO_E_TOSA, agendamentos, formatter);
-        tentarAgendarConsulta(dono2, animal2, data3Str, Agenda.Servico.DESPARASITACAO, agendamentos, formatter);
 
         System.out.println("\nConsultas agendadas:");
         for (Agenda agenda : agendamentos) {
